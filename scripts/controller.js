@@ -1,8 +1,6 @@
 // basic functionalities
 
 $(document).ready(function() {
-	var rowNumber = 1;
-	var topicArray = [];
 	client = mqtt.connect("wss://test.mosquitto.org:8081/mqtt");
 		client.on("connect", function(){
 		    console.log("Successfully connected");
@@ -23,11 +21,4 @@ $(document).ready(function() {
 		$("#off").hide();
 		$("#on").show();
 	});
-
-	$("#btn-clear").click (function() {
-		for (var i=rowNumber-1; i>=1; i--) {
-			document.getElementById("table").deleteRow(i);
-		}
-		rowNumber = 1;
-	})
 })

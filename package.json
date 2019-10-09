@@ -14,7 +14,8 @@
     "mows",
     "mqtt",
     "websocket",
-    "node"
+    "node",
+    "heroku"
   ],
   "engines": {
     "node": "10.16"

@@ -1,0 +1,39 @@
+<html>
+
+<head>
+	<title>IOT Switch</title>
+	<style>
+		.container {
+			text-align: center;
+		}
+	</style>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.js"></script>
+</head>
+
+<body>
+		<div class="container">
+			<h1>
+				IOT Switch
+			</h1>
+			<div id="off">
+				<p>The device is currently turned off</p>
+			</div>
+			<div id="on" style="display: none;">
+				<p>The device is currently turned on</p>
+			</div>
+			<button id="btn-on" class="btn btn-success">On</button>
+			<button id="btn-off" style="opacity: 0.5" class="btn btn-danger">Off</button>
+		</div>
+
+
+</body>
+<script src="browserMqtt.js"></script>
+<script src="controller.js"></script>
+
+</html>
